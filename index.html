@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Car List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Список Автомобилей:</h1>
+        <form id="carForm">
+            <div class="form-group">
+                <label for="name">Название Автомобиля:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Модель:</label>
+                <input type="text" id="model" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Год выпуска:</label>
+                <input type="number" id="year" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Цена:</label>
+                <input type="number" id="price" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Позиция:</label>
+                <input type="number" id="position" min="1" required>
+            </div>
+            <button type="submit">Добавить</button>
+        </form>
+    
+        <h2>Список:</h2>
+        <ul id="carList"></ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
